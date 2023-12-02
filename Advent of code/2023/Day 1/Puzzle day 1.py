@@ -4,7 +4,7 @@ with open('Day '+D+'/Input day '+D+'.txt', 'r') as file:
 
 numbers, it, numbers2, cal_values2, cal_values, numbers_written = [], [], [], [], [], ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 
-
+# Part 1 in one line
 print(sum([int(str([character for character in line if character.isnumeric()][0])+str([character for character in line if character.isnumeric()][-1])) for line in open('Day '+D+'/Input day '+D+'.txt', 'r').read().splitlines()]))
 
 for i in range(len(lis)):
